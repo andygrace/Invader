@@ -2,9 +2,10 @@
 //   Nothing much to this hardware - let's use an Arduino but 
 //   AVR, ARM microcontrollers all work.  This is a simple testbed for a future commercial product, so no GPL but enjoy for now.
 //
-//   One 8x8 RED-GREEN matrix display = 128 LEDs  cost: $1 each
+//   One 8x8 RED-GREEN common anode matrix display 1088BHG or equivalent = 128 LEDs cost: $1 each
+//
 //   Three '595 8-bit shift registers; 
-//   One '595 driving the rows (anodes) of the display via a UDN2981A 8 x Darlington transistor array (or use 8 x PNP transisitors)
+//   One '595 driving the rows (anodes) of the display via a UDN2981A 8 x Darlington transistor array (or use 8 x PNP transistors)
 //   Other two '595s driving the columns multiplexed with 8:1 - 12.5% duty cycle via current limiting resistors.
 //   No PWM needed for this but other code on this hardware does shades of colour. 
 
